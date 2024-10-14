@@ -1,0 +1,175 @@
+/* Styles for header */
+* { box-sizing: border-box; }
+body { background-color: #5CDB95;
+       color: #221811;
+	   font-family: Tahoma, Arial, sans-serif; 
+	   margin: 0;  
+}
+
+header { background-color: #5CDB95; 
+        background-image: url(watermark.PNG);
+        background-size: 105px 105px;
+		background-repeat: no-repeat;
+		height: 100px;
+        padding-left: 50px;		 
+		padding-top: 5px;
+		padding-bottom:5px;
+}
+
+#wrapper { background-color:#5CDB95;
+  padding: 0;
+}   
+
+header a { text-decoration: none; }
+header a:link       { color: rgba(145, 101, 101, 0.54); }
+header a:visited { color: #05386B; }
+header a:hover     { color: #EDF5E1; }
+h1 { font-size: #05386B ; }
+h2 { color: white; }
+
+nav {  text-align: center;
+	  font-size: 1.5em;
+}
+nav a { text-decoration: none; }
+nav a:link       { color: purple; }
+nav a:visited { color: #05386B ; }
+nav a:hover     { color:white; }
+
+nav ul { display: flex;
+       flex-direction: row;
+	   font-size: 1em;
+	   list-style-type: none;
+	   margin: 0;
+       padding: 0; }
+
+nav li { border-bottom: 1px solid #FEF6C2;
+       padding: .5em 1em;
+      width: 100%; }
+main { background-color: #8EE4AF;
+       display: block;
+       padding: 0 0 2em 0; 
+       text-align:center;
+}
+
+footer{
+  text-align:center;
+}
+
+
+
+
+/* Styles for contact */
+   .contact-info {
+    display: flex;
+  }
+  
+  .address,
+  .opening-hours {
+    flex-basis: 50%;
+  }
+  
+  .address h4,
+  .opening-hours h4 {
+    margin-top: 0;
+  }
+  
+  @media (max-width: 767px) {
+    .contact-info {
+      flex-wrap: wrap;
+    }
+    
+    .address,
+    .opening-hours {
+      flex-basis: 100%;
+    }
+  }
+
+   
+   
+   /* Styles for Booking */
+   
+   .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      
+    }
+
+    .container .image {
+      width: 200px;
+      height:auto;
+    }
+
+    .price {
+      margin-left: 20px;
+      font-weight: bold;
+      font-size: medium;
+    }
+
+    .booking-link {
+      margin-left: 30px;
+    }
+
+
+
+
+/* Styles for Staff Highlight */
+
+
+   body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+
+    .image {
+      width: 100%;
+      height: auto;
+    }
+
+
+/* Styles for Staff Review */
+
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+}
+
+
+.form-container label {
+  background-image: url(donna.png);
+  font-weight: bold;
+  width: 100px;
+}
+
+.form-container input[type="text"],
+.form-container textarea {
+  width: 300px;
+}
+
+.form-container button {
+  margin-left: 100px;
+}
+
+.message-container {
+  text-align: center;
+}
+
+
+
+
+
+
+

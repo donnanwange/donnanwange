@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Thee Donna Effect</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="hairpage.css" rel="stylesheet">
+</head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1><a href="home.html">Thee Donna Effect</a></h1>
+      </header>
+      <nav> 
+        <ul> 
+            <li><a href="home.html">Home</a></li>
+        <li><a href="contact.html">About Us/Contact Us</a></li>
+        <li><a href="book.html">Services/Book Now</a></li>
+        <li><a href="staff.html">Staff Highlight</a></li>
+        <li><a href="review.html">Customer Review</a></li>
+        </ul>
+       </nav>
+
+
+      <h2>Customer Review</h2>
+      <p>Welcome to our review page, All information is required.</p>
+    
+      <form class="form-container" id="review-form" action="thankyou.html">
+      <!--I used flexbox to arrange the form element in a two column layout -->
+
+
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+          <label for="experience">Experience:</label>
+          <textarea name="experience" id="experience" rows="2" cols="20" required></textarea>
+        </div>
+
+        <button type="submit">Enter</button>
+      </form>
+    
+      <div class="message-container" id="message-container" style="display: none;">
+        <p>Thank you for your review! Our team will work to improve your experience.</p>
+      </div>
+    
+    </form>
+
+    <footer>
+      <p>You are beautiful no matter your physical appearance. - Donna Nwange</p>
+    </footer>
+  </body>
+</html>

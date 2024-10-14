@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Thee Donna Effect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="hairpage.css" rel="stylesheet">
+    <script>
+      // Function to validate if YouTube video is embedded
+      function validateYouTubeEmbed() {
+        const iframe = document.querySelector('iframe');
+        const message = document.getElementById('video-message');
+
+        if (iframe && iframe.src.includes('youtube.com')) {
+          message.textContent = 'YouTube video is embedded correctly!';
+          message.style.color = 'green';
+        } else {
+          message.textContent = 'Please check the video embedding link!';
+          message.style.color = 'red';
+        }
+      }
+
+      // Function to update motivational content dynamically
+      function updateMotivationalMessage() {
+        const motivationalMessages = [
+          "You are unstoppable!",
+          "Your hair is your crown.",
+          "Feel beautiful, look beautiful!",
+          "Be bold, be you!",
+          "Every day is a good hair day!"
+        ];
+        const randomMessage = motivationalMessages[Math.floor(Math.random() * motivationalMessages.length)];
+        document.getElementById('motivational-message').textContent = randomMessage;
+      }
+
+      // Event listener for when the page is loaded
+      window.onload = function () {
+        validateYouTubeEmbed(); // Validate video embedding on page load
+      }
+    </script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1><a href="home.html">Thee Donna Effect</a></h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="contact.html">About Us/Contact Us</a></li>
+          <li><a href="book.html">Services/Book Now</a></li>
+          <li><a href="staff.html">Staff Highlight</a></li>
+          <li><a href="review.html">Customer Review</a></li>
+        </ul>
+      </nav>
+      <main>
+        
+        <h2>Hairstyles by Donna Nwange</h2>
+        <p>While Viewing Our YouTube Video We Hope It Motivates You To Book With Thee Donna Effect and Make Your Inspiration a Reality</p>
+
+        <!-- YouTube Video Embed -->
+        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/iCgWEXCU55g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p id="video-message"></p> <!-- Dynamic message for video validation -->
+
+        <h3>Motivational Message</h3>
+        <p id="motivational-message">You are beautiful no matter your physical appearance.</p>
+
+        <!-- Button to update motivational message -->
+        <button onclick="updateMotivationalMessage()">Change Message</button>
+        
+         <!-- Personal introduction with email link -->
+         <p>Hi, my name is Donna Nwange, the founder of Thee Donna Effect. Feel free to reach out to me via email: 
+          <a href="mailto:donnanwange@yahoo.com">donnanwange@yahoo.com</a>
+        </p>
+      </main>
+      <footer>
+        <p>You are beautiful no matter your physical appearance. - Donna Nwange</p>
+      </footer>
+    </div>
+  </body>
+</html>
